@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>who</title>
+        <link rel="stylesheet" href="pageStyles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito:wght@800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="navbar">
+            <a href="index.html">pain</a>
+            <a id="active" href="fun.html">dang</a>
+            <a href="who.html">who is</a>
+            <a href="where.html">wher</a>
+        </div>
+        <div class="content">
+            here's some cool stuff<br/>
+            i made
+            <img class="coolPic" src="cool.png">
+
+            <iframe class="coolVid" src="https://www.youtube.com/embed/aipxGaUr8sU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <script src="qScripts.js"></script>
+        <script>
+            let pic = document.getElementsByClassName("coolPic")[0]
+            pic.onclick = () => {
+                let con = document.getElementsByClassName("content")[0]
+                let newText = document.createElement("p")
+                newText.innerText = "helo"
+                pic.parentNode.insertBefore(newText, pic)
+            }
+        </script>
+    </body>
+</html>

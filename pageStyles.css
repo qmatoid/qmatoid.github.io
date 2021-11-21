@@ -1,0 +1,80 @@
+body {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #e7fdf7;
+}
+
+#navbar {
+    font-family: 'Montserrat', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+#navbar:hover {
+    background-color: #bff1e7;
+}
+
+#navbar a {
+    color: #45b4ba;
+    padding: 1rem 5rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2rem;
+    transition: 0.5s;
+}
+
+#navbar a:hover {
+    color: #257571;
+}
+
+#navbar a#active {
+    background-color: #ab03ba;
+    color: #bff1e7;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Nunito', sans-serif;
+    font-size: 4rem;
+    background-color: #bff1e7;
+    color: #257571;
+    border-radius: 10vmin;
+    margin: 10vw;
+    padding: 10vmin;
+    width: calc(80vw - 20vmin);
+    min-height: calc(100vh - (20vw + 20vmin));
+}
+
+.coolPic {
+    background-color: white;
+    padding: 5vmin;
+    border-radius: 10vmin;
+    margin-top: 4rem;
+}
+
+.coolVid {
+    margin-top: 4rem;
+    width: calc(80vw - 20vmin);
+    height: calc((80vw - 20vmin) * 0.5625);
+}
+
+@media only screen
+    and (max-width: 1000px)
+    and (orientation : portrait) {
+    #navbar {
+        flex-direction: column;
+    }
+
+    #navbar a {
+        width: 100vw;
+    }
+}

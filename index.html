@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>index</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>
+            hi its me qain
+        </h1>
+        <h2>
+            remeber me
+        </h2>
+        <p>
+            helo
+        </p>
+        <a id="contact" href="where.html">
+            <img id="runImg" alt="runing" src="run.gif">
+            <p id="runText">
+                where di d i go?
+            </p>
+        </a>
+        <table style="width:56%">
+            <tr>
+                <th>who?</th>
+                <th><a href="resume.pdf">wow look a tthis</a></th>
+                <th>im so tire</th>
+            </tr>
+            <tr>
+                <td>
+                    hey it me
+                </td>
+                <td>
+                    or maybe not i dontknow
+                </td>
+                <td>
+                    please i just want to sleep i dont know how much i have like insomia or something and it takes 2 hours every night  to sleep please im just so tired and fatirued ugh please help this is i am in pain
+                </td>
+            </tr>
+        </table>
+        <marquee id="vMarq" direction="down" behavior="alternate" scrollamount="67">
+            <marquee id="hMarq" behavior="alternate" scrollamount="41">
+                thi s is a v nice bowser i liek it :)
+            </marquee>
+        </marquee>
+        <script>
+            let marqInterID
+            const changeMarqSpeed = () => {
+                let vMarqSpeed = Math.random() * 500;
+                let hMarqSpeed = Math.random() * 500;
+                document.getElementById('vMarq').setAttribute('scrollamount', vMarqSpeed)
+                document.getElementById('hMarq').setAttribute('scrollamount', hMarqSpeed)
+            }
+            marqInterID = setInterval(changeMarqSpeed, 100)
+        </script>
+    </body>
+</html>

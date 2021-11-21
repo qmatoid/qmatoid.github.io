@@ -1,0 +1,92 @@
+html {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    animation-duration: 2s;
+    animation-name: rainbowText;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rainbowText {
+    from {
+        color: #8d7017
+    }
+    12.5% {
+        color: #d8ab97;
+    }
+    25% {
+        color: #ffad41;
+    }
+    37.5% {
+        color: #ad4e16;
+    }
+    50% {
+        color: #883117;
+    }
+    62.5% {
+        color: #751616;
+    }
+    75% {
+        color: #5c0531;
+    }
+    87.5% {
+        color: #0b3f53;
+    }
+    to {
+        color: #8d7017;
+    }
+}
+
+table {
+    margin: auto;
+    border-style: ridge;
+    border-color: firebrick;
+    border-width: 11px 248px 79px 37px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0), rgb(58, 44, 0)), url(futbd.jpg);
+}
+th {
+    border: 5px groove darkolivegreen;
+}
+td {
+    border: 21px inset rgb(86, 4, 107);
+}
+
+#contact {
+    width: 10vw;
+    float: right;
+    display: flex;
+    height: 5vh;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#runImg {
+    height: 100%;
+}
+
+#runText {
+    position: absolute;
+}
+
+
+body {
+    background-image: url('bucket.jpg'), url('funteam.jpg');
+    background-repeat: no-repeat, repeat;
+    background-position: right, top;
+}
+
+h1 {
+    font-size: 10vh;
+}
+
+#vMarq {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    color: rgba(59, 16, 53, 0.815);
+    font-size: 2vh;
+    pointer-events: none;
+}
