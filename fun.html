@@ -27,12 +27,14 @@
         <script src="qScripts.js"></script>
         <script>
             let pic = document.getElementsByClassName("coolPic")[0]
-            pic.onclick = () => {
+            const print = () => {
                 let con = document.getElementsByClassName("content")[0]
                 let newText = document.createElement("p")
                 newText.innerText = "helo"
                 pic.parentNode.insertBefore(newText, pic)
             }
+            pic.onclick = print
+            pic.addEventListener("touchend", print)
         </script>
     </body>
 </html>
